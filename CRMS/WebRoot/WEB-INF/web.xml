@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>CRMS</display-name>
+  <filter>
+    <filter-name>struts2</filter-name>
+    <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>struts2</filter-name>
+    <url-pattern>*.action</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.sise.LoginCheck.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>changepwCheck</servlet-name>
+    <servlet-class>com.sise.ChangePassword.changepwCheck</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <servlet-class>com.sise.FileManager.UploadHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownLoadServlet</servlet-name>
+    <servlet-class>com.sise.FileManager.DownLoadServlet</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>link_record_edit</servlet-name>
+    <servlet-class>com.sise.linkRecordManager.link_record_edit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>link_record_del</servlet-name>
+    <servlet-class>com.sise.linkRecordManager.link_record_del</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>link_record_add</servlet-name>
+    <servlet-class>com.sise.linkRecordManager.link_record_add</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackCheck</servlet-name>
+    <servlet-class>com.sise.feedbackManager</servlet-class>
+  </servlet>
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>Client.Add</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Change</servlet-name>
+    <servlet-class>Client.Change</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>changepwCheck</servlet-name>
+    <url-pattern>/servlet/changepwCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <url-pattern>/servlet/UploadHandleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownLoadServlet</servlet-name>
+    <url-pattern>/servlet/DownLoadServlet</url-pattern>
+  </servlet-mapping>
+  
+
+
+
+  <servlet-mapping>
+    <servlet-name>link_record_edit</servlet-name>
+    <url-pattern>/servlet/link_record_edit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>link_record_del</servlet-name>
+    <url-pattern>/servlet/link_record_del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>link_record_add</servlet-name>
+    <url-pattern>/servlet/link_record_add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FeedbackCheck</servlet-name>
+    <url-pattern>/servlet/FeedbackCheck</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/servlet/Add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Change</servlet-name>
+    <url-pattern>/servlet/Change</url-pattern>
+  </servlet-mapping>
+  </web-app>
