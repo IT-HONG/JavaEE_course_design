@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="lab" extends="struts-default" namespace="/news">
+		<action name="*Action" class="newsAction" method="{1}">
+		    <result name="input">/WEB-INF/news/add.jsp</result>
+			<result name="add_input">/WEB-INF/news/add.jsp</result>
+			<result name="add">/WEB-INF/news/success.jsp</result>
+			<result name="listAll">/WEB-INF/news/show.jsp</result>
+			<result name="edit_input">/WEB-INF/news/edit.jsp</result>
+			<result name="edit_success">/WEB-INF/news/success.jsp</result>
+			<result name="find_input">/WEB-INF/news/find.jsp</result>
+			<result name="find_success">/WEB-INF/news/show.jsp</result>
+			<result name="show">/WEB-INF/news/edit.jsp</result>
+			<result name="remove_success">/WEB-INF/news/success.jsp</result>
+		</action>
+		<action name="loginAction" class="loginAction" method="login">
+		    <result name="success">/index.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+	</package>
+</struts>    

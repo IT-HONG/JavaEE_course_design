@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="lab" location="365,108" size="280,420">
+    <action name="*Action" location="77,122" size="150,146">
+      <result name="add_input">
+        <resourceEdge source="add_input" routing="0" target="add.jsp" />
+      </result>
+      <result name="add">
+        <resourceEdge source="add" routing="0" target="success.jsp" />
+      </result>
+      <result name="listAll">
+        <resourceEdge source="listAll" routing="0" target="index.jsp" />
+      </result>
+      <result name="edit_success">
+        <resourceEdge source="edit_success" routing="0" target="success.jsp" />
+      </result>
+      <result name="show">
+        <resourceEdge source="show" routing="0" target="edit.jsp" />
+      </result>
+      <result name="remove">
+        <resourceEdge source="remove" routing="0" target="success.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="addPerson.jsp" path="addPerson.jsp" location="480,564" size="150,55" />
+  <webResource name="success.jsp" path="/success.jsp" location="150,395" size="150,55" />
+  <webResource name="index.jsp" path="index.jsp" location="150,255" size="150,55" />
+  <webResource name="success.jsp" path="success.jsp" location="10,115" size="150,55" />
+  <webResource name="edit.jsp" path="edit.jsp" location="430,10" size="150,55" />
+  <webResource name="edit.jsp" path="/news/edit.jsp" location="50,501" size="150,55" />
+  <webResource name="edit.jsp" path="/edit.jsp" location="68,649" size="150,55" />
+  <webResource name="index.jsp" path="/WEB-INF/news/index.jsp" location="350,650" size="150,55" />
+  <webResource name="edit.jsp" path="/WEB-INF/news/edit.jsp" location="50,800" size="150,55" />
+  <webResource name="add.jsp" path="/add.jsp" location="350,800" size="150,55" />
+</Struts2Diagram>
+
